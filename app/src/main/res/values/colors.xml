@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#1565C0</color>
+    <color name="primary_blue_dark">#0D47A1</color>
+    <color name="screen_background">#F5F7FA</color>
+    <color name="input_border">#B0BEC5</color>
+    <color name="error_red">#C62828</color>
+    <color name="success_green">#2E7D32</color>
+</resources>
+
