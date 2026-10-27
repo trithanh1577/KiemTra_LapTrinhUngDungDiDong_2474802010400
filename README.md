@@ -18,3 +18,7 @@
 ![ListView Display](screenshots/cau3_listview_display.png)
 
 ![Item Click Toast](screenshots/cau3_item_click_toast.png)
+
+## Ảnh chạy trên Android Emulator
+
+![Android Emulator](screenshots/android_studio_emulator.png)
