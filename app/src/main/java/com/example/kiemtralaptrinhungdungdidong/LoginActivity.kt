@@ -1,5 +1,6 @@
 package com.example.kiemtralaptrinhungdungdidong
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Patterns
@@ -53,6 +54,10 @@ class LoginActivity : AppCompatActivity() {
             else -> {
                 tvStatus.setTextColor(Color.parseColor("#2E7D32"))
                 tvStatus.text = "Validation Successful!"
+
+                val profileIntent = Intent(this, ProfileActivity::class.java)
+                profileIntent.putExtra(EXTRA_EMAIL, email)
+                startActivity(profileIntent)
             }
         }
     }
@@ -60,6 +65,10 @@ class LoginActivity : AppCompatActivity() {
     private fun showError(message: String) {
         tvStatus.setTextColor(Color.parseColor("#C62828"))
         tvStatus.text = message
+    }
+
+    companion object {
+        const val EXTRA_EMAIL = "extra_email"
     }
 }
 
